@@ -1,3 +1,4 @@
+
 # Eps2-OOP
 All the stuff from TecArt's Software Engineering Eps 2 Workshop to prep for your project 😘
 ## Prerequisite
@@ -10,8 +11,16 @@ Install NetBeans from [NetBeans Download Page](https://netbeans.apache.org/front
 > To use NetBeans you'll also need to install the latest Java SE Development Kit on your device. Full tutorial can be watched here: [How to install NetBeans + JDK](https://youtu.be/bXIv-LYBu7s?si=jacuiKDhpg8H6VSK)
 
 - #### JDBC Driver
-Install JDBC Driver from [JDBC Driver Download Page](https://dev.mysql.com/downloads/connector/j/)
-> If your OS is not an option in the download page, select platform independent and manually add JAR/Folder to your Java Project. Full tutorial can be watched here: [How to add Platform Independent JDBC](https://www.youtube.com/watch?v=xPTpVZMmXI0) 
+
+Add this line of code into your `pom.xml`, after  `</dependency>` for `org.org.netbeans.external` dependency
+```
+<dependency>
+	<groupId>mysql</groupId>
+	<artifactId>mysql-connector-java</artifactId>
+	<version>8.0.33</version> <!-- Use the latest version -->
+</dependency>
+```
+> To find the leatest version of JDBC, look up to the JDBC download page. [JDBC Driver Download Page](https://dev.mysql.com/downloads/connector/j/)
 
 - #### Discord (optional)
 Feel free to join TecArt's discord channel for any help regarding this project ! [Discord Link] (https://discord.gg/RmjSNg3UpH)
@@ -47,6 +56,7 @@ Here are some additional tutorial to help you work on your project !
 - [MySQL Query](https://www.w3schools.com/MySQL/mysql_sql.asp)
 - [NetBeans GUI Tutorial 1](https://youtu.be/MNCXyyYX5mk?si=0eXEgoy2jVWmodHZ)
 - [NetBeans GUI Tutorial 2](https://www.petanikode.com/java-swing-jframe/)
+- [Other Java CRUD Project](https://www.youtube.com/watch?v=aEsMa5FomoI)
 
 
 
